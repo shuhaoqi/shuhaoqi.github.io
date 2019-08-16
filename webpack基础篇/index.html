@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack 基础篇 | 个人博客</title>
+    <meta name="description" content="欢迎来到我的博客🙅‍♂️">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.6e5fdfdf.css" as="style"><link rel="preload" href="/assets/js/app.04d5a5b0.js" as="script"><link rel="preload" href="/assets/js/2.bc54e02c.js" as="script"><link rel="preload" href="/assets/js/4.1a2d3658.js" as="script"><link rel="prefetch" href="/assets/js/10.480c6d40.js"><link rel="prefetch" href="/assets/js/11.83a1c68d.js"><link rel="prefetch" href="/assets/js/12.076188a0.js"><link rel="prefetch" href="/assets/js/13.a336089a.js"><link rel="prefetch" href="/assets/js/14.5bff727f.js"><link rel="prefetch" href="/assets/js/15.9df4e6f5.js"><link rel="prefetch" href="/assets/js/16.cbd2fa25.js"><link rel="prefetch" href="/assets/js/3.865d10e4.js"><link rel="prefetch" href="/assets/js/5.ed30e806.js"><link rel="prefetch" href="/assets/js/6.ae06d931.js"><link rel="prefetch" href="/assets/js/7.c6aceed2.js"><link rel="prefetch" href="/assets/js/8.29f7dba7.js"><link rel="prefetch" href="/assets/js/9.f5f28b67.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6e5fdfdf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/目录/" class="nav-link">目录</a></div><div class="nav-item"><a href="/更多/" class="nav-link">更多</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/目录/" class="nav-link">目录</a></div><div class="nav-item"><a href="/更多/" class="nav-link">更多</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js高级</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>webpack</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/" class="active sidebar-link">webpack 基础篇</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#webpack-基础篇" class="sidebar-link">webpack 基础篇</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#npm-卸载包" class="sidebar-link">npm 卸载包</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#初始化项目" class="sidebar-link">初始化项目</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#webpack-安装" class="sidebar-link">webpack 安装</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#webpack-可以进行-0-配置" class="sidebar-link">webpack 可以进行 0 配置</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#手动配置-webpack" class="sidebar-link">手动配置 webpack</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#配置脚本命令-package-json" class="sidebar-link">* 配置脚本命令 package.json</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#配置出口入口" class="sidebar-link">* 配置出口入口</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#直接给文件加-hash-值-防止浏览器缓存" class="sidebar-link">直接给文件加 hash 值(防止浏览器缓存)</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#配置打包环境" class="sidebar-link">* 配置打包环境</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#开发服务器配置" class="sidebar-link">* 开发服务器配置</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#处理-html" class="sidebar-link">处理 html</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#处理样式-在-webpack-css-js-img-里面一切皆模块" class="sidebar-link">处理样式 在 webpack css,js,img 里面一切皆模块</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#抽离-css" class="sidebar-link">抽离 css</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#使用-postcss-loader-autoprefixer-添加浏览器前缀" class="sidebar-link">使用 postcss-loader,autoprefixer 添加浏览器前缀</a></li><li class="sidebar-sub-header"><a href="/webpack%E5%9F%BA%E7%A1%80%E7%AF%87/#处理-js-es6-转化成-es5" class="sidebar-link">处理 js es6 转化成 es5</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vuepress</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git生成ssh key</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="webpack-基础篇"><a href="#webpack-基础篇" aria-hidden="true" class="header-anchor">#</a> webpack 基础篇</h2> <h2 id="npm-卸载包"><a href="#npm-卸载包" aria-hidden="true" class="header-anchor">#</a> npm 卸载包</h2> <p>npm uninstall 包名 npm unistall webpack -g -global 全局表示哪都能用</p> <h2 id="初始化项目"><a href="#初始化项目" aria-hidden="true" class="header-anchor">#</a> 初始化项目</h2> <div class="language- extra-class"><pre class="language-text"><code> yarn init -y ||npm init -y
+</code></pre></div><h2 id="webpack-安装"><a href="#webpack-安装" aria-hidden="true" class="header-anchor">#</a> webpack 安装</h2> <ul><li>webpack4.0</li> <li>安装本地的 webpack</li> <li>yarn add webpack webpack-cli -D||npm install webpack webpack-cli -D</li> <li>-D 表示 development 开发环境</li></ul> <h2 id="webpack-可以进行-0-配置"><a href="#webpack-可以进行-0-配置" aria-hidden="true" class="header-anchor">#</a> webpack 可以进行 0 配置</h2> <ul><li><p>目录结构</p> <ul><li>src
+<ul><li>index.js</li></ul></li></ul></li> <li><p>直接运行 npx webpack</p></li> <li><p>打包工具 -&gt; 输出后的结果(js 模块)</p></li> <li><p>打包（直接 js 的模块化）</p></li></ul> <h2 id="手动配置-webpack"><a href="#手动配置-webpack" aria-hidden="true" class="header-anchor">#</a> 手动配置 webpack</h2> <ul><li>[x] 默认配置文件的名字是 webpack.config.js/webpackfile.js 通常使用 webpack.config.js</li> <li>webpack 是基于 node 编写的</li></ul> <h2 id="配置脚本命令-package-json"><a href="#配置脚本命令-package-json" aria-hidden="true" class="header-anchor">#</a> * 配置脚本命令 package.json</h2> <ul><li>&quot;scripts&quot;: { } 这里面配置的命令叫做脚本</li> <li>-- config 指定默认运行文件是哪个</li> <li>&quot;build&quot;: &quot;webpack --config webpack.config.js&quot;,</li> <li>&quot;dev&quot;: &quot;webpack-dev-server&quot;</li> <li>&quot;start&quot;:&quot;npm run dev&quot;</li> <li>这样就可以通过 npm run dev/npm run build 执行相关的命令</li></ul> <h2 id="配置出口入口"><a href="#配置出口入口" aria-hidden="true" class="header-anchor">#</a> * 配置出口入口</h2> <ul><li>[x]entry 入口 可以是相对路径</li> <li>[x]output 出口 输出</li> <li>path 输出路径 必须是绝对路径 打包过后的文件夹名称</li> <li>filename:打包以后的文件名称</li></ul> <div class="language- extra-class"><pre class="language-text"><code>module.exports={
+  entry:'./src/index.js',
+	output:{
+	  path:path.resolve(__dirname,'dist'),
+	  filename:'bundle[hash:6].js',
+	  publicPath:'http://www.baidu.com'
+	 }
+}
+</code></pre></div><h2 id="直接给文件加-hash-值-防止浏览器缓存"><a href="#直接给文件加-hash-值-防止浏览器缓存" aria-hidden="true" class="header-anchor">#</a> 直接给文件加 hash 值(防止浏览器缓存)</h2> <div class="language- extra-class"><pre class="language-text"><code>filename:'bundle[hash].js'
+可以用:后面跟数字设置hash值的长度
+filename:'bundle[hash:8].js'
+</code></pre></div><h2 id="配置打包环境"><a href="#配置打包环境" aria-hidden="true" class="header-anchor">#</a> * 配置打包环境</h2> <ul><li>mode  的值 2 个值 development 和
+production</li></ul> <ol><li>[x] development 开发环境</li> <li>[x] production 生产环境</li></ol> <div class="language- extra-class"><pre class="language-text"><code>module.exports={
+  mode:'development',
+  ...
+}
+</code></pre></div><h2 id="开发服务器配置"><a href="#开发服务器配置" aria-hidden="true" class="header-anchor">#</a> * 开发服务器配置</h2> <ul><li>yarn add webpack-dev-server -D||npm install webpack-dev-server</li></ul> <div class="language- extra-class"><pre class="language-text"><code>devServer:{
+  port:3000, #端口号
+  contentBase:'./dist', #目录 如果没有dist文件夹 会在内存里面自动创建
+  open:true, #是否自动打开浏览器
+  progress:true, #显示进度条
+  compress:true  #是否开启gzip压缩
+  proxy:{
+    //可以配置跨域
+  }
+ }
+</code></pre></div><h2 id="处理-html"><a href="#处理-html" aria-hidden="true" class="header-anchor">#</a> 处理 html</h2> <ul><li><p>src</p> <ul><li>index.js</li> <li>index.html</li></ul></li> <li><p>[x] yarn add html-webpack-plugin -D||npm install html-webpack-plugin</p></li> <li><p>当有插件的时候需要配置 plugins 插件集合类型是数组</p></li> <li><p>每一个插件都是通过 new 来调用，例：new HtmlWebpackPlugin()</p></li> <li><p>可以运行 npm run dev/npm run build 查看结果</p></li> <li><p>装完插件后运行 webpack 会自动引入我们作为入口的 index.js</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+  * template:'./src/index.html',//使用哪里的html做模板
+  * filename:'index.html', //编译后的文件名
+  hash:true,//加hash值
+  minify:{ //压缩配置
+    removeAttributeQuotes:true, //去除双引号
+    collapseWhitespace: true,  //折叠去除空格
+  }
+}
+</code></pre></div><h2 id="处理样式-在-webpack-css-js-img-里面一切皆模块"><a href="#处理样式-在-webpack-css-js-img-里面一切皆模块" aria-hidden="true" class="header-anchor">#</a> 处理样式 在 webpack css,js,img 里面一切皆模块</h2> <ul><li><p>src</p> <ul><li>index.html</li> <li>index.js</li> <li>style.css</li></ul></li> <li><p>. index.js 通过 require require('/style.css') 报错如下</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>You may need an appropriate loader to handle this file type
+appropriate  合适的
+你可能需要一个合适的loader
+</code></pre></div><ul><li>. 配置 module,配置 rules 数组，表示很多规则，用正在匹配 js、css 等,rules 里面配置不容的 loader,每个 loader 的配置都是一个对象</li></ul> <div class="language- extra-class"><pre class="language-text"><code>module:{
+  rules:[]
+}
+</code></pre></div><p>loader 的配置方法 test 匹配规则 use 使用什么 loader
+yarn add css-loader style-loader -D||
+npm install css-loader style-loader -D</p> <ul><li>test 表示什么文件使用当前的 loader 用正则配置</li> <li>use 的用法</li></ul> <ol><li>字符串 只能写一个 loader
+use:'css-loader'</li> <li>数组 可以写多个 loader 数组里面可以放字符串和对象
+css-loader 解析 require/import 语法
+style-loader 把 css 插入到 header 标签中</li></ol> <p>use:['style-loader','css-loader']
+loader 的执行顺序是从右到左执行 从下到上</p> <div class="language- extra-class"><pre class="language-text"><code>rules:[
+ {
+     test:'/\.css$/',//匹配以css结尾的文件
+     use:[]
+ }
+]
+</code></pre></div><ul><li>.use 可以直接写 loader，也可以写成对象，写对象的时候可以进行配置
+options 可以做一些自定义的配置</li></ul> <div class="language- extra-class"><pre class="language-text"><code> {
+   loader:'style-loader',
+    options:{
+     insertAt:'top'  //css 放置位置可以决定css的优先级
+  }
+</code></pre></div><ul><li><p>src</p> <ul><li>index.html</li> <li>index.js</li> <li>style.css</li> <li>b.less</li></ul></li> <li><p>配置 less 编译(less-&gt;css) 因为从右向左，从下到上执行 所以写在下边和右边
+yarn add less less-loader -D</p></li> <li><p>编译 sass
+node-sass sass-loader -D</p></li> <li><p>编译 stylus
+stylus stylus-loader -D</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>  {
+    test:/\.less$/,
+    use:[
+       'style-loader',
+       'css-loader',
+       'less-loader'
+    ]
+ }
+</code></pre></div><h2 id="抽离-css"><a href="#抽离-css" aria-hidden="true" class="header-anchor">#</a> 抽离 css</h2> <ul><li>[x] yarn add mini-css-extract-plugin -D</li> <li>MiniCssExtractPlugin 插件自带一个 loader</li> <li>MiniCssExtractPlugin.loader 会自动把 css 抽离出来 作为引用的方式引入页面 </li></ul> <div class="language- extra-class"><pre class="language-text"><code>  new MiniCssExtractPlugin({
+      filename: 'main.css' ##抽离出来的css的文件名
+    })
+
+</code></pre></div><ul><li>[x] 在 loader 里面的写法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>  use: [MiniCssExtractPlugin.loader, &quot;css-loader&quot;]
+</code></pre></div><h2 id="使用-postcss-loader-autoprefixer-添加浏览器前缀"><a href="#使用-postcss-loader-autoprefixer-添加浏览器前缀" aria-hidden="true" class="header-anchor">#</a> 使用 postcss-loader,autoprefixer 添加浏览器前缀</h2> <ul><li>[x] yarn add postcss-loader autoprefixer -D</li> <li>autoprefixer 自动添加浏览器前缀的插件</li> <li>安装 postcss 插件
+yarn add postcss-preset-env -D 允许使用 css 未来特性的插件</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+  test:/\.less$/,
+  use:[
+     MiniCssExtractPlugin.loader,
+    'css.loader',
+    'less-loader',
+    'postcss-loader'
+  ]
+}
+</code></pre></div><ul><li>[x] 需要配置 postcss 默认文件 名字
+在根目录下创建 postcss.config.js/.postcssrc.js</li></ul> <ul><li>放到所有 cssloader 后面，执行顺序原因</li></ul> <div class="language- extra-class"><pre class="language-text"><code> npm run dev 的时候会报错
+ Error: No PostCSS Config found in: /Users/ruanye/Desktop/project/src
+ 没有找到postcss的默认文件
+</code></pre></div><ul><li>[x] postcss.config.js 文件里面的内容：</li></ul> <div class="language- extra-class"><pre class="language-text"><code> module.exports={
+    plugins:[require('autoprefixer')]
+  }
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>/允许你使用未来的 CSS 特性。
+const postcssPresetEnv = require('postcss-preset-env');
+// 自动添加浏览器前缀
+const autoprefixer = require('autoprefixer');
+module.exports = {
+    plugins: [
+      postcssPresetEnv,
+      autoprefixer({})
+    ]
+  };
+</code></pre></div><ul><li>在使用 autoprefixer 做兼容性前缀时，我们要指定浏览器版本来确定在指定版本中添加兼容性前缀。可以在 package.json 中的 browserslist 字段中指定。或者单独建立一个.browserslistrc 文件</li></ul> <h2 id="处理-js-es6-转化成-es5"><a href="#处理-js-es6-转化成-es5" aria-hidden="true" class="header-anchor">#</a> 处理 js es6 转化成 es5</h2> <ul><li>[x] yarn add babel-loader @babel/core @babel/preset-env</li></ul> <p>@babel/core babel 核心模块
+@babel-preset-env 标准语法转化成低级语法</p> <ul><li>presets 预设插件 比如定案的 promise 是不会被转化的</li> <li>yarn add @babel/polyfill 已经废弃</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;presets&quot;: [
+    [
+      &quot;@babel/preset-env&quot;,
+      {
+        &quot;useBuiltIns&quot;: &quot;entry&quot;  自动注入依赖
+      }
+    ]
+  ]
+}
+</code></pre></div><h3 id="快捷键"><a href="#快捷键" aria-hidden="true" class="header-anchor">#</a> 快捷键</h3> <p>帮助 <code>Ctrl + /</code>
+同步文档 <code>Ctrl + S</code>
+创建文档 <code>Ctrl + Alt + N</code>
+最大化编辑器 <code>Ctrl + Enter</code>
+预览文档 <code>Ctrl + Alt + Enter</code>
+文档管理 <code>Ctrl + O</code>
+系统菜单 <code>Ctrl + M</code></p> <p>加粗 <code>Ctrl + B</code>
+插入图片 <code>Ctrl + G</code>
+插入链接 <code>Ctrl + L</code>
+提升标题 <code>Ctrl + H</code></p> <img src="/assets/img/hero.19139207.jpg"></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.04d5a5b0.js" defer></script><script src="/assets/js/2.bc54e02c.js" defer></script><script src="/assets/js/4.1a2d3658.js" defer></script>
+  </body>
+</html>
